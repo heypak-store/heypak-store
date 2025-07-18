@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeyPak Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #1f1f1f; color: white; padding: 1rem 2rem; text-align: center; }
+    nav { background: #333; color: white; padding: 1rem; display: flex; justify-content: center; }
+    nav a { color: white; text-decoration: none; margin: 0 1rem; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 2rem; }
+    .product { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+    .product h3 { margin: 0.5rem 0; }
+    .product p { color: #777; }
+    .product button { background: #28a745; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 5px; }
+    footer { background: #1f1f1f; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HeyPak Store</h1>
+    <p>Your Trusted Vape Shop Online</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="products" class="products">
+    <div class="product">
+      <img src="https://scontent.fcrk4-2.fna.fbcdn.net/v/t39.30808-6/494692960_122234355602018113_377727895342450558_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE55XaSujBZEn5Sj9H-Am9vxKjEip0-LTTEqMSKnT4tNAhtulXEu04HqwdwR9yyEUhN37lrQX7G6ml97AYMqX7f&_nc_ohc=QdTD0Uy_HC8Q7kNvwFbnsgK&_nc_oc=AdmiEiggI1jn87Ri4MJcFKMykhPBwQYzh4yCw3VfzR_YVFIjikQgKEymiRQe5rz6_A0&_nc_zt=23&_nc_ht=scontent.fcrk4-2.fna&_nc_gid=LSFAnSGvixQSHMoXZglGQQ&oh=00_AfRIcbx4fwPyqIC6z4sAAc1LJz3-c9vU5bEthdwkdMiQlA&oe=68803E57" alt="Vape 1">
+      <h3>V1(Flavors)</h3>
+      <p>P400/each - Powerful & stylish device</p>
+      <button onclick="orderNow('Vape Mod Alpha')">Order Now</button>
+    </div>
+    <div class="product">
+      <img src="https://scontent.fcrk2-2.fna.fbcdn.net/v/t39.30808-6/490548015_122226586946018113_3340737591608400916_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFSSfKnLeYr3I1DtQcf3qVGK1wpFqEIGRUrXCkWoQgZFYOtw62DXeEYt1Gtn997Wpxh7IOPPuvbnzjBsD3cdEVI&_nc_ohc=wAiTxkwAyWgQ7kNvwE_QyPF&_nc_oc=AdlzPhrBYihh5WwAKHgLROHPf2AYWwgaXlhzMxjbrqxNU0lJbzfkOju6uVwJVtyZL0U&_nc_zt=23&_nc_ht=scontent.fcrk2-2.fna&_nc_gid=Y0hdZJVenPYTDuCQjwprlA&oh=00_AfTkk2Q61g-gNCIeOuU-3k5Ym65NttUPyBWeM9k20NDMmQ&oe=68803CCB" alt="Vape 2">
+      <h3>Royal Elite V1</h3>
+      <p>P400 - Smooth mango flavor</p>
+      <button onclick="orderNow('Juice Mango Burst')">Order Now</button>
+    </div>
+  </section>
+
+  <section id="payment" style="padding: 2rem; text-align: center;">
+    <h2>Payment Method</h2>
+    <p>We accept GCash and PayPal</p>
+    <img src="gcash-qr.jpg" alt="GCash QR" style="width:200px; border:1px solid #ccc; margin-top:1rem;">
+  </section>
+
+  <section id="contact" style="padding: 2rem; text-align: center;">
+    <h2>Contact Us</h2>
+    <p>For orders and inquiries, message us on <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HeyPak Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function orderNow(productName) {
+      alert("You have selected: " + productName + "\nTo place an order, please send us a message on our Facebook page or scan the GCash QR Code.");
+    }
+  </script>
+</body>
+</html>
